@@ -1,0 +1,16 @@
+int var;
+int Led = 0;
+int Botao = 1;
+void setup()
+{
+  pinMode(Led, OUTPUT);
+  pinMode(Botao, INPUT);
+  digitalWrite(Led, HIGH);
+}
+void loop()
+{
+  var = digitalRead(Botao);
+  if(var){
+         digitalWrite(Led, LOW);
+   }
+} 
